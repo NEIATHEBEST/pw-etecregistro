@@ -1,0 +1,138 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0b0f19;
+    color: #fff;
+}
+
+/* Header estilo streaming */
+header {
+    background: linear-gradient(90deg, #ff0000, #ff4d00);
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Menu */
+nav {
+    background: #141b2d;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+/* Container */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+/* Títulos */
+section h2 {
+    margin-bottom: 20px;
+    color: #ff4d00;
+}
+
+/* GRID estilo Netflix */
+section {
+    margin-bottom: 50px;
+}
+
+section > article {
+    display: inline-block;
+}
+
+/* Cards */
+article {
+    background: #141b2d;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 10px;
+    width: 250px;
+    display: inline-block;
+    vertical-align: top;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+/* Hover estilo streaming */
+article:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px rgba(255, 0, 0, 0.6);
+    z-index: 2;
+}
+
+/* Imagens */
+article img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Conteúdo */
+article h3 {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+article p {
+    padding: 0 10px 15px;
+    font-size: 0.85rem;
+    color: #ccc;
+}
+
+/* Aside destaque */
+aside {
+    background: #141b2d;
+    padding: 20px;
+    border-left: 5px solid #ff0000;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #141b2d;
+    color: #aaa;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    article {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
